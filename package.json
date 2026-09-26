@@ -1,0 +1,39 @@
+{
+  "name": "insuredmine-assessment",
+  "version": "1.0.0",
+  "description": "Node Js and MongoDB technical assessment",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test",
+    "fixture:xlsx": "node scripts/create-xlsx-fixture.js",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop insuredmine-assessment",
+    "pm2:logs": "pm2 logs insuredmine-assessment",
+    "pm2:restart": "pm2 restart insuredmine-assessment"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://MadhuriDantham@github.com/MadhuriDantham/insuredmine-assessment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "csv-parse": "^5.6.0",
+    "dotenv": "^16.4.7",
+    "exceljs": "^4.4.0",
+    "express": "^4.21.2",
+    "mongodb": "^6.20.0",
+    "multer": "^2.0.2",
+    "pm2": "^5.4.3"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/MadhuriDantham/insuredmine-assessment/issues"
+  },
+  "homepage": "https://github.com/MadhuriDantham/insuredmine-assessment#readme"
+}
